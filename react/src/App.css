@@ -1,0 +1,445 @@
+
+
+
+
+
+
+
+/* App */
+
+.App {
+  text-align: center;
+  background-color: #101010;
+  color: #FFFFFF;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (min-width: 600px) {
+  .container {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+  .row {
+    padding-right: 0 !important;
+  }
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: #101010 !important;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+/* .breadcrumb {
+  margin-bottom: 0;
+  background-color: white;
+} */
+
+/* .row {
+  padding-left: 100px;
+  padding-right: 100px;
+} */
+
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #C63B1D; 
+  text-decoration: none;
+}
+
+label {
+  padding-bottom: 6px;
+}
+
+.input-error {
+  color: #dc3545;
+  font-size: 0.875em;
+} 
+
+.card-text {text-align:left}
+
+.list-group {text-align:left}
+
+.list-group-item {
+  background-color: #1a1a1a !important;
+  color: white !important;
+}
+.list-group-item.selected-item {
+  background-color: white !important;
+  color: #1a1a1a !important;
+}
+
+.nav-tabs {
+  border-bottom: 0rem !important;
+}
+
+.nav-tabs .nav-item .nav-link {
+  background-color: #1a1a1a !important;
+  color: white !important;
+}
+.nav-tabs .nav-item .nav-link.active {
+  background-color: white !important;
+  color: #1a1a1a !important;
+}
+
+.component-container { 
+  min-height: 90vh;
+}
+
+.modal-content {
+  background-color: #1a1a1a !important;
+  color: white !important;
+  border-color: black !important;
+}
+
+.modal-header {
+  border-bottom: 1px solid black !important;
+}
+
+.modal-footer {
+  border-top: 1px solid black !important;
+}
+
+.form-group {
+  padding-top: 8px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.checkboxes {
+  color: white;
+  background-color: #1a1a1a;
+}
+
+.App-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: 'FiraSans-Light'
+}
+
+.App-subtitle {
+  margin-bottom: 20px;
+  font-family: 'FiraSans-Light';
+  text-align: left;
+}
+
+.artist-subtitle {
+  margin-bottom: 2px;
+  margin-left: 12px;
+  font-family: 'FiraSans-Light';
+  text-align: left;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.item-title {
+  color: white;
+}
+
+.item-description {
+  color: white;
+  text-align: left;
+  font-size: calc(7px + 1vmin);
+}
+
+.item-type {
+  color: white;
+  font-size: calc(6px + 1vmin);
+  margin: 5px 0 5px 0;
+}
+
+
+/* Header */
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.background-header {
+  background-color: #333333;
+}
+
+
+
+
+
+
+/* Artist Colors */
+
+.artist-color-text-Red { 
+  border: 2px solid #C63B1D;
+  color:  #C63B1D;
+}
+.artist-color-text-Red:hover { 
+  border: 2px solid white;
+  background-color: #C63B1D;
+}
+
+.artist-color-Red {
+  background-color: #C63B1D;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+/* Artist CARD */
+
+.artist-card {
+  color: black !important; 
+  border-top: 0.1rem solid !important; 
+  border-right: 0.1rem solid !important;
+  background-color: #1a1a1a !important;
+}
+
+.scroll-card {
+  width: 250px !important;
+  padding: 0px 16px 0px 0px;
+}
+
+@media (max-width: 600px) {
+  .scroll-card {
+    width: 160px !important;
+  }
+}
+
+.scroll-nav {
+  padding: 0px 16px 0px 0px;
+}
+
+@media (max-width: 600px) {
+  .scroll-nav {
+    padding: 0px 16px 0px 0px;
+  }
+}
+
+.scroll-nav-item {
+  border-radius: 50%;
+  border:1px solid red;
+  width: 100px;
+  height: 100px; 
+  background-color: #1a1a1a;
+  color: white; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.artist-card-content { 
+  /* border-left: 0.1rem solid;
+  border-bottom: 0.2rem solid;  */
+  padding: 6px; 
+  color:white;
+  min-height: 300px;
+  max-height: 300px;
+}
+
+.testCardScroll {
+  padding-top: 14px;
+  /* background-image: linear-gradient(to right, rgba(9, 112, 0,1), rgba(9, 112, 0,0.5), rgba(9, 112, 0,0.3), rgba(9, 112, 0,0.1),rgba(9, 112, 0,0)); */
+  min-height: 330px;
+  max-height: 330px;
+}
+
+@media (max-width: 600px) {
+  .artist-card-content {
+    min-height: 200px;
+    max-height: 200px;
+  }
+  .testCardScroll {
+    min-height: 240px;
+    max-height: 240px;
+  }
+}
+
+.artist-card-body {
+  min-height: 7.5rem;
+  margin-top: 6px; 
+  border-top: 0.1rem solid; 
+  border-right: 0.1rem solid;
+  font-family: 'Gelasio', serif;
+  border-color:black;
+  background-color: #242424 !important
+}
+
+.artist-card-body-2 {
+  padding: 14px 0px 14px 0px !important;
+  padding: 6px; 
+  color:white;
+  min-height: 0.1rem;
+  max-height: 0.1rem;
+}
+.artist-card-footer-2 {
+  padding: 14px 0px 14px 0px !important;
+  padding: 6px; 
+  color:white;
+}
+
+@media (max-width: 600px) {
+  .artist-card-body-2 {
+    padding: 6px 0px 2px 0px !important;
+    font-size: 0.7rem;
+    min-height: 2.4rem;
+    max-height: 2.4rem;
+  }
+  .artist-card-footer-2 {
+    padding: 2px 0px 4px 0px !important;
+    font-size: 0.7rem;
+    background-color: none !important;
+    border: none !important;
+  }
+}
+
+.artist-card-header {
+  border-top: 0.1rem solid; 
+  border-right: 0.1rem solid;
+  border-color:black;
+  margin-bottom: 6px !important; 
+  padding: 5px 12px 5px 12px !important;
+  text-align: left !important;
+  font-family: 'Gelasio', serif;
+  background-color: #242424 !important;
+}
+
+.instr-icon{
+  float: right;
+  border-radius: 50%;
+  border: 0.1rem solid !important; 
+  text-align: center;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+  color: white;
+  border-color: white;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */  
+}
+
+.float-right{
+  float: right;
+}
+
+.content-center{
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */  
+}
+
+/* Artist CARD Show */
+
+.artist-info {
+  border: 0.1rem solid !important; 
+  border-bottom: 0.2rem solid !important; 
+  margin-bottom: 6px !important; 
+  border-color:black !important;
+  background-color: #1a1a1a;
+  padding: 30px !important;
+  text-align: left !important;
+  font-family: 'Gelasio', serif;
+  height: 100%;
+}
+
+.show-instr-icon{
+  float: right;
+  border-radius: 50%;
+  border: 0.1rem solid !important; 
+  text-align: center;
+  font-size: 0.7rem;
+  min-height: 2.2rem;
+  min-width: 2.2rem;
+  color: white;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */  
+}
+
+.artist-skill {
+  background-color: #101010; 
+  padding: 4px; 
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: 0.1rem solid; 
+  border-color:black;
+}
+
+
+
+
+
+
+
+.offcanvas {
+  background-color: #101010 !important;
+  color: #FFFFFF !important;
+}
+.offcanvas .btn-close {
+  background-color: #FFFFFF !important;
+}
+
+.detail-img {width: 100%;}
+.artist .detail-img {border-radius: 50%;}
+
+@media (max-width: 600px) {
+  .detail-img {
+    width: 60%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .container.mob-container {
+    padding: 4% !important;
+    overflow-x: auto !important;
+  }
+}
+
+
+/* LOGIN */
+.social-login {
+  text-align: left !important;
+  color: white !important;
+  margin: 4px;
+  min-width: 200px;
+}
